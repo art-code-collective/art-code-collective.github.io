@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Playfair+Display");
+
+$pink: #fd0ca5;
+$purple: #760cfd;
+$grey: #404040;
+
+@mixin flex($direction) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 75px;
+  color: $pink;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 10px;
+  text-align: center;
+
+  @media screen and (max-width: 650px) {
+    font-size: 50px;
+    margin-bottom: -20px;
+  }
+}
+
+svg {
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  position: absolute;
+}
+
+blockquote {
+  font-size: 25px;
+}
+
+.homepage {
+  overflow: hidden;
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+  }
+
+  a {
+    margin-right: 20px;
+    font-size: 30px;
+    text-decoration: none;
+    color: $purple;
+  
+    &:hover {
+      text-decoration: underline;
+    }
+
+    @media screen and (max-width: 1000px) {
+      font-size: 18px;
+    }
+  }
+
+  .container {
+    text-align: center;
+    color: grey;
+    font-family: "Lato", sans-serif;
+  }
+  
+  .logo {
+    @include flex(column);
+    margin: 0 auto;
+    width: 50%;
+    height: 100vh;
+
+    @media screen and (max-width: 650px) {
+      width: 100%;
+    }
+  }
+}
+
+.coc {
+  width: 80%;
+  margin: 0 auto;
+  font-family: "Lato", sans-serif;
+
+  a {
+    text-decoration: none;
+    color: $pink;
+  }
+
+  img {
+    width: 150px;
+    margin-top: 50px;
+    margin-left: 20px;
+
+    @media screen and (max-width: 650px) {
+      width: 100px;
+    }
+  }
+}
+
+
+.title {
+  @include flex(row);
+  margin: 0 auto;
+
+  @media screen and (max-width: 650px) {
+    flex-direction: column;
+  }
+}

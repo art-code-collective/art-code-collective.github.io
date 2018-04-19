@@ -1,31 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Lato|Playfair+Display');
-
-html, body {
-  overflow: hidden;
-}
-
-.container {
-  text-align: center;
-  color: #404040;
-  font-family: 'Lato', sans-serif;
-}
-
-.logo {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  height: 100vh;
-}
-
+@import url("https://fonts.googleapis.com/css?family=Lato|Playfair+Display");
 h1 {
   font-size: 75px;
-  color: #FD0CA5;
-  font-family: 'Playfair Display', serif;
+  color: #fd0ca5;
+  font-family: "Playfair Display", serif;
   margin-bottom: 10px;
   text-align: center;
+}
+@media screen and (max-width: 650px) {
+  h1 {
+    font-size: 50px;
+    margin-bottom: -20px;
+  }
 }
 
 svg {
@@ -42,54 +27,78 @@ blockquote {
   font-size: 25px;
 }
 
+.homepage {
+  overflow: hidden;
+}
 .homepage ul {
   list-style-type: none;
   display: flex;
   flex-direction: row;
 }
-
 .homepage a {
   margin-right: 20px;
   font-size: 30px;
   text-decoration: none;
-  color: #760CFD;
+  color: #760cfd;
 }
-
-a:hover {
+.homepage a:hover {
   text-decoration: underline;
+}
+@media screen and (max-width: 1000px) {
+  .homepage a {
+    font-size: 18px;
+  }
+}
+.homepage .container {
+  text-align: center;
+  color: grey;
+  font-family: "Lato", sans-serif;
+}
+.homepage .logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 50%;
+  height: 100vh;
+}
+@media screen and (max-width: 650px) {
+  .homepage .logo {
+    width: 100%;
+  }
 }
 
 .coc {
   width: 80%;
   margin: 0 auto;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
-
-img {
+.coc a {
+  text-decoration: none;
+  color: #fd0ca5;
+}
+.coc img {
   width: 150px;
   margin-top: 50px;
   margin-left: 20px;
+}
+@media screen and (max-width: 650px) {
+  .coc img {
+    width: 100px;
+  }
 }
 
 .title {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  align-content: center;
-  margin: 0 auto;
   justify-content: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 }
-
-.coc a {
-  text-decoration: none;
-  color: #FD0CA5;
-}
-
 @media screen and (max-width: 650px) {
-  .coc h1 {
-    font-size: 50px;
-    margin-bottom: -20px;
-  }
   .title {
     flex-direction: column;
   }
