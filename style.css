@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Playfair+Display');
+
+html, body {
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+  color: #404040;
+  font-family: 'Lato', sans-serif;
+}
+
+.logo {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 75px;
+  color: #FD0CA5;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 10px;
+}
+
+svg {
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  position: absolute;
+}
+
+blockquote {
+  font-size: 25px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+a {
+  margin-right: 20px;
+  font-size: 30px;
+  text-decoration: none;
+  color: #760CFD;
+}
+
+a:hover {
+  text-decoration: underline;
+}
